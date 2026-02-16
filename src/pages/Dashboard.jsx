@@ -1,4 +1,8 @@
-import { Grid, Stack, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+
 import DashboardLayout from "../layout/DashboardLayout";
 import StatCard from "../components/StatCard";
 import HighlightedCard from "../components/HighlightedCard";
@@ -41,56 +45,60 @@ const data = [
     ],
   },
 ];
+
 export default function Dashboard({ toggleTheme }) {
   return (
     <DashboardLayout toggleTheme={toggleTheme}>
-      <Typography variant="h6" sx={{ mb: 2 }}>
-        Overview
-      </Typography>
+      <Box sx={{ width: "100%", maxWidth: { sm: "100%", md: "1700px" } }}>
+        <Typography component="h2" variant="h6" sx={{ mb: 2 }}>
+          Overview
+        </Typography>
 
-      <Grid
-        container
-        spacing={2}
-        columns={12}
-        sx={{ mb: (theme) => theme.spacing(2) }}
-      >
-        {data.map((card, index) => (
-          <Grid key={index} size={{ xs: 12, sm: 6, lg: 3 }}>
-            <StatCard {...card} />
+        <Grid
+          container
+          spacing={2}
+          columns={12}
+          sx={{ mb: (theme) => theme.spacing(2) }}
+        >
+          {data.map((card, index) => (
+            <Grid key={index} size={{ xs: 12, sm: 6, lg: 3 }}>
+              <StatCard {...card} />
+            </Grid>
+          ))}
+
+          <Grid size={{ xs: 12, sm: 6, lg: 3 }}>
+            <HighlightedCard />
           </Grid>
-        ))}
-        <Grid size={{ xs: 12, sm: 6, lg: 3 }}>
-          <HighlightedCard />
-        </Grid>
-        <Grid size={{ xs: 12, md: 6 }}>
-          <AreaChartCard />
-        </Grid>
-        <Grid size={{ xs: 12, md: 6 }}>
-          <BarChartCard />
-        </Grid>
-      </Grid>
 
-      <Typography component="h2" variant="h6" sx={{ mb: 2 }}>
-        Details
-      </Typography>
+          <Grid size={{ xs: 12, md: 6 }}>
+            <AreaChartCard />
+          </Grid>
 
-      <Grid container spacing={2} columns={12}>
-        <Grid size={{ xs: 12, lg: 9 }}>
-          <ProductTable />
+          <Grid size={{ xs: 12, md: 6 }}>
+            <BarChartCard />
+          </Grid>
         </Grid>
 
-        <Grid size={{ xs: 12, lg: 3 }}>
-          <Stack
-            spacing={2}
-            sx={{
-              height: "100%",
-            }}
-          >
-            <ProductTree />
-            <UsersByCountry />
-          </Stack>
+        <Typography component="h2" variant="h6" sx={{ mb: 2 }}>
+          Details
+        </Typography>
+
+        <Grid container spacing={2} columns={12}>
+          <Grid size={{ xs: 12, lg: 9 }}>
+            <ProductTable />
+          </Grid>
+
+          <Grid size={{ xs: 12, lg: 3 }}>
+            <Stack
+              gap={2}
+              direction={{ xs: "column", sm: "row", lg: "column" }}
+            >
+              <ProductTree />
+              <UsersByCountry />
+            </Stack>
+          </Grid>
         </Grid>
-      </Grid>
+      </Box>
     </DashboardLayout>
   );
 }
