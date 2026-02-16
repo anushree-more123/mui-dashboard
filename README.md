@@ -81,7 +81,12 @@ http://localhost:3000
 
 ## 📸 Output
 
-![Dark theme 1 Screenshot](./output/dark1_screenshot.png)
-![Dark theme 2 Screenshot](./output/dark2_screenshot.png)
-![Light theme 1 Screenshot](./output/light1_screenshot.png)
-![Light theme 2 Screenshot](./output/light2_screenshot.png)
+<p align="center">
+  <img src="./output/dark1_screenshot.png" width="45%" />
+  <img src="./output/dark2_screenshot.png" width="45%" />
+</p>
+
+<p align="center">
+  <img src="./output/light1_screenshot.png" width="45%" />
+  <img src="./output/light2_screenshot.png" width="45%" />
+</p>
