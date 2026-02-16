@@ -19,49 +19,34 @@ theme-aware design using MUI and MUI X.
 
 ---
 
-## 🖥️ Run Locally
+## 🖥️ Running the Project
 
-npm install\
+```bash
+npm install
 npm start
+```
 
-App runs at:\
+The app runs at:
+
 http://localhost:3000
 
 ---
 
-## 📸 Preview
+## 📸 Output
 
-```{=html}
 <p align="center">
-```
-
-`<img src="./output/dark1_screenshot.png" width="47%" />`{=html}
-`<img src="./output/dark2_screenshot.png" width="47%" />`{=html}
-
-```{=html}
+  <img src="./output/dark1_screenshot.png" width="47%" />
+  <img src="./output/dark2_screenshot.png" width="47%" />
 </p>
-```
 
-```{=html}
 <p align="center">
-```
-
-`<img src="./output/light1_screenshot.png" width="47%" />`{=html}
-`<img src="./output/light2_screenshot.png" width="47%" />`{=html}
-
-```{=html}
+  <img src="./output/light1_screenshot.png" width="47%" />
+  <img src="./output/light2_screenshot.png" width="47%" />
 </p>
-```
 
-```{=html}
 <p align="center">
-```
-
-`<img src="./output/mobile1_screenshot.png" width="23%" />`{=html}
-`<img src="./output/mobile2_screenshot.png" width="23%" />`{=html}
-`<img src="./output/mobile3_screenshot.png" width="23%" />`{=html}
-`<img src="./output/mobile4_screenshot.png" width="23%" />`{=html}
-
-```{=html}
+  <img src="./output/mobile1_screenshot.png" width="23%" />
+  <img src="./output/mobile2_screenshot.png" width="23%" />
+  <img src="./output/mobile3_screenshot.png" width="23%" />
+  <img src="./output/mobile4_screenshot.png" width="23%" />
 </p>
-```
