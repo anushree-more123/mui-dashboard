@@ -1,11 +1,12 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid, Stack, Typography } from "@mui/material";
 import DashboardLayout from "../layout/DashboardLayout";
 import StatCard from "../components/StatCard";
 import HighlightedCard from "../components/HighlightedCard";
 import AreaChartCard from "../components/AreaChartCard";
 import BarChartCard from "../components/BarChartCard";
-import DetailsTable from "../components/DetailsTable";
 import ProductTree from "../components/ProductTree";
+import UsersByCountry from "../components/UsersByCountry";
+import ProductTable from "../components/ProductTable";
 
 const data = [
   {
@@ -69,16 +70,25 @@ export default function Dashboard({ toggleTheme }) {
         </Grid>
       </Grid>
 
-      <Typography variant="h6" sx={{ mb: 2 }}>
+      <Typography component="h2" variant="h6" sx={{ mb: 2 }}>
         Details
       </Typography>
 
-      <Grid container spacing={2}>
-        <Grid item xs={12} lg={9}>
-          <DetailsTable />
+      <Grid container spacing={2} columns={12}>
+        <Grid size={{ xs: 12, lg: 9 }}>
+          <ProductTable />
         </Grid>
-        <Grid item xs={12} lg={3}>
-          <ProductTree />
+
+        <Grid size={{ xs: 12, lg: 3 }}>
+          <Stack
+            spacing={2}
+            sx={{
+              height: "100%",
+            }}
+          >
+            <ProductTree />
+            <UsersByCountry />
+          </Stack>
         </Grid>
       </Grid>
     </DashboardLayout>

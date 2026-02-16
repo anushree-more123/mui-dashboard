@@ -3,8 +3,7 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 export default function Topbar({ toggleTheme }) {
   return (
-    <Box sx={{ display: "flex", justifyContent: "space-between", mb: 3 }}>
-      <Typography variant="h5">Dashboard</Typography>
+    <Box sx={{ display: "flex", justifyContent: "flex-end", mr: 2 }}>
       <IconButton onClick={toggleTheme}>
         <DarkModeIcon />
       </IconButton>
