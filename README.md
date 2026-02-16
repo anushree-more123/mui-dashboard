@@ -82,11 +82,11 @@ http://localhost:3000
 ## 📸 Output
 
 <p align="center">
-  <img src="./output/dark1_screenshot.png" width="45%" />
-  <img src="./output/dark2_screenshot.png" width="45%" />
+  <img src="./output/dark1_screenshot.png" width="47%" />
+  <img src="./output/dark2_screenshot.png" width="47%" />
 </p>
 
 <p align="center">
-  <img src="./output/light1_screenshot.png" width="45%" />
-  <img src="./output/light2_screenshot.png" width="45%" />
+  <img src="./output/light1_screenshot.png" width="47%" />
+  <img src="./output/light2_screenshot.png" width="47%" />
 </p>
