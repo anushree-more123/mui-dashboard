@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider, CssBaseline, createTheme } from "@mui/material";
+import { useMemo, useState } from "react";
+import Dashboard from "./pages/Dashboard";
 
-function App() {
+export default function App() {
+  const [mode, setMode] = useState("dark");
+
+  const theme = useMemo(
+    () =>
+      createTheme({
+        palette: {
+          mode,
+        },
+      }),
+    [mode],
+  );
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Dashboard
+        toggleTheme={() => setMode(mode === "dark" ? "light" : "dark")}
+      />
+    </ThemeProvider>
   );
 }
-
-export default App;
