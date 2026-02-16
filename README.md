@@ -16,7 +16,7 @@ This dashboard replicates a real-world SaaS analytics interface with:
 - Collapsible navigation tree
 - Country-based analytics visualization
 - Theme-aware styling (Dark / Light mode)
-- Clean, scalable component architecture
+- Clean, scalable component architecture optimized for responsive layouts
 
 ---
 
