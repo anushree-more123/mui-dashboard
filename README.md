@@ -1,99 +1,67 @@
 # 📊 MUI Analytics Dashboard
 
-A modern, responsive analytics dashboard built with **React** and
+A modern, fully responsive analytics dashboard built with **React** and
 **Material UI (MUI)**.\
-This project demonstrates advanced UI patterns, data visualization, and
-custom component styling using MUI and MUI X.
+It showcases advanced UI patterns, interactive data visualization, and
+theme-aware design using MUI and MUI X.
 
 ---
 
-## 🚀 Overview
+## ✨ Features
 
-This dashboard replicates a real-world SaaS analytics interface with:
-
-- Advanced data tables
-- Interactive charts
-- Collapsible navigation tree
-- Country-based analytics visualization
-- Theme-aware styling (Dark / Light mode)
-- Clean, scalable component architecture optimized for responsive layouts
-
----
-
-## ✨ Core Features
-
-### 📋 Advanced Data Grid
-
-- Checkbox row selection
-- Pagination
-- Compact density
-- Status indicators (Online / Offline)
-- Sparkline charts inside table cells
-- Custom header and row styling
-- Hover effects
-- Dark mode support
-
-### 📈 Analytics Charts
-
-- Sessions Line/Area Chart
-- Page Views Bar Chart
-- Smooth gradient styling
-- Responsive chart sizing
-- Clean tooltip behavior
-
-### 🌳 Product Tree
-
-- Expand / Collapse functionality
-- Nested hierarchy (Website → Blog → Posts)
-- Custom dot indicators for node types
-- Selected state styling
-- Keyboard-friendly interaction
-
-### 🌍 Users by Country
-
-- Donut (Pie) Chart visualization
-- Center total label
-- Country breakdown with percentage
-- Styled progress indicators
-- Clean legend-free layout
-
-### 🌙 Theme Support
-
-- Fully theme-aware components
-- Dark mode optimized UI
-- Uses MUI theme palette properly
-- No hardcoded colors (where avoidable)
+- Advanced Data Grid with pagination, row selection, status chips, and
+  sparkline charts\
+- Interactive area and bar charts\
+- Expandable product tree navigation\
+- Users-by-country donut chart with breakdown\
+- Dark / Light mode support\
+- Fully responsive layout for desktop and mobile
 
 ---
 
-## 🖥️ Running the Project
+## 🖥️ Run Locally
 
-```bash
-npm install
+npm install\
 npm start
-```
 
-The app runs at:
-
+App runs at:\
 http://localhost:3000
 
 ---
 
-## 📸 Output
+## 📸 Preview
 
+```{=html}
 <p align="center">
-  <img src="./output/dark1_screenshot.png" width="47%" />
-  <img src="./output/dark2_screenshot.png" width="47%" />
-</p>
+```
 
-<p align="center">
-  <img src="./output/light1_screenshot.png" width="47%" />
-  <img src="./output/light2_screenshot.png" width="47%" />
-</p>
+`<img src="./output/dark1_screenshot.png" width="47%" />`{=html}
+`<img src="./output/dark2_screenshot.png" width="47%" />`{=html}
 
-<p align="center">
-  <img src="./output/mobile1_screenshot.png" width="23%" />
-  <img src="./output/mobile2_screenshot.png" width="23%" />
-  <img src="./output/mobile3_screenshot.png" width="23%" />
-  <img src="./output/mobile4_screenshot.png" width="23%" />
+```{=html}
 </p>
+```
+
+```{=html}
+<p align="center">
+```
+
+`<img src="./output/light1_screenshot.png" width="47%" />`{=html}
+`<img src="./output/light2_screenshot.png" width="47%" />`{=html}
+
+```{=html}
+</p>
+```
+
+```{=html}
+<p align="center">
+```
+
+`<img src="./output/mobile1_screenshot.png" width="23%" />`{=html}
+`<img src="./output/mobile2_screenshot.png" width="23%" />`{=html}
+`<img src="./output/mobile3_screenshot.png" width="23%" />`{=html}
+`<img src="./output/mobile4_screenshot.png" width="23%" />`{=html}
+
+```{=html}
+</p>
+```
